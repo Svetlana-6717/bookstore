@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -57,7 +58,7 @@
             Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов. Теперь я делюсь
             своими золотыми стратегиями ценообразования на творческую работу.
           </p>
-          <button class="button book__buy">КУПИТЬ СЕЙЧАС</button>
+          <button class="book__buy">КУПИТЬ СЕЙЧАС</button>
           <button class="button book__read">ЧИТАТЬ ДЕМО</button>
         </div>
         <!-- /.book-info -->
@@ -70,6 +71,260 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section class="products">
+    <div class="container">
+      <div class="products-wrapper">
+        <div class="recommended">
+          <h2 class="recommended__title">Рекомендации</h2>
+          <div class="recommended-wrapper">
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/books-1.png" alt="Книга The World of Abstract Art">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">The World of Abstract Art</h3>
+                <span class="recommended-card__category">Art & Design</span>
+                <span class="recommended-card__price">$25.00</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/book-2.jpg" alt="Книга Educated: a Memoir">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">Educated : a&nbsp;Memoir</h3>
+                <span class="recommended-card__category">Education</span>
+                <span class="recommended-card__price">$28.00</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/book-3.jpg" alt="Книга The Blue Flowers Ray">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">The Blue Flowers Ray…</h3>
+                <span class="recommended-card__category">Novel</span>
+                <span class="recommended-card__price">$19.50</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/book-4.jpg" alt="Книга There There : a Novel by TO">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">There There : a&nbsp;Novel by TO</h3>
+                <span class="recommended-card__category">Novel</span>
+                <span class="recommended-card__price">$20.00</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/book-5.jpg" alt="Книга WMNDFL : The Inspiration">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">WMNDFL : The&nbsp;Inspiration</h3>
+                <span class="recommended-card__category">Business</span>
+                <span class="recommended-card__price">$23.00</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <div class="recommended-card">
+              <div class="recommended-card__image">
+                <img src="img/recommended/book-6.jpg" alt="Книга Making Things Happen">
+              </div>
+              <!-- /.recommended-card__image -->
+              <div class="recommended-card__text">
+                <h3 class="recommended-card__title">Making Things&nbsp;Happen</h3>
+                <span class="recommended-card__category">Motivation</span>
+                <span class="recommended-card__price">$23.00</span>
+                <button class="recommended-card__button">Купить</button>
+                <img class="recommended-card__icon" src="img/recommended/heart.svg" alt="icon: heart">
+              </div>
+              <!-- /.recommended-card__text -->
+            </div>
+            <!-- /.recommended-card -->
+            <a class="recommended__link" href="#">Больше&nbsp;рекомендаций</a>
+          </div>
+          <!-- /.recommended-wrapper -->
+        </div>
+        <!-- /.recommended -->
+
+        <div class="rating">
+          <h2 class="rating__title">Топ Месяца</h2>
+          <div class="rating-wrapper">
+            <div class="rating-card">
+              <div class="rating-card__image">
+                <img src="img/rating/books-1.jpg" alt="Книга Sprint: Solve, Test in 5 Days">
+              </div>
+              <!-- /.rating-card__image -->
+              <div class="rating-card__text">
+                <h3 class="rating-card__title">Sprint : Solve, Test&nbsp;in 5 Days</h3>
+                <span class="rating-card__price">$23.00</span>
+                <button class="rating-card__button">Купить</button>
+              </div>
+              <!-- /.rating-card__text -->
+            </div>
+            <!-- /.rating-card -->
+            <div class="rating-card">
+              <div class="rating-card__image">
+                <img src="img/rating/books-2.jpg" alt="Книга Hacking Growth Break Problem">
+              </div>
+              <!-- /.rating-card__image -->
+              <div class="rating-card__text">
+                <h3 class="rating-card__title">Hacking&nbsp;Growth Break Problem</h3>
+                <span class="rating-card__price">$23.00</span>
+                <button class="rating-card__button">Купить</button>
+              </div>
+              <!-- /.rating-card__text -->
+            </div>
+            <!-- /.rating-card -->
+            <div class="rating-card">
+              <div class="rating-card__image">
+                <img src="img/rating/books-3.jpg" alt="Книга Very Nice a Novel by Mercy">
+              </div>
+              <!-- /.rating-card__image -->
+              <div class="rating-card__text">
+                <h3 class="rating-card__title">Very Nice a Novel&nbsp;by Mercy</h3>
+                <span class="rating-card__price">$23.00</span>
+                <button class="rating-card__button">Купить</button>
+              </div>
+              <!-- /.rating-card__text -->
+            </div>
+            <!-- /.rating-card -->
+            <div class="rating-card">
+              <div class="rating-card__image">
+                <img src="img/rating/books-4.jpg" alt="Книга Hooked: How to Build Products">
+              </div>
+              <!-- /.rating-card__image -->
+              <div class="rating-card__text">
+                <h3 class="rating-card__title">Hooked : How to Build Products</h3>
+                <span class="rating-card__price">$23.00</span>
+                <button class="rating-card__button">Купить</button>
+              </div>
+              <!-- /.rating-card__text -->
+            </div>
+            <!-- /.rating-card -->
+            <a class="rating__link" href="#">ЛУЧШИЕ КНИГИ</a>
+          </div>
+          <!-- /.rating-wrapper -->
+        </div>
+        <!-- /.rating -->
+      </div>
+      <!-- /.products-wrapper -->
+
+      <div class="products-category">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper-container category-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide category-slider__item">
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
+                  <h3 class="category-slider__title">Бизнес & Финансы</h3>
+                  <span class="category-slider__text">Книги про мир бизнеса</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-2.svg" alt="icon-2">
+                  <h3 class="category-slider__title category-slider__title--mb-3">Самомотиватия</h3>
+                  <span class="category-slider__text">Книги о мотивации</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-3.svg" alt="icon-3">
+                  <h3 class="category-slider__title">Романы Теленовеллы</h3>
+                  <span class="category-slider__text">Книги с крутыми историями</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-4.svg" alt="icon-4">
+                  <h3 class="category-slider__title">Навыки будущего</h3>
+                  <span class="category-slider__text">Книги для самоподготовки</span>
+                </div>
+              </div>
+              <div class="swiper-slide category-slider__item">
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
+                  <h3 class="category-slider__title">Бизнес & Финансы</h3>
+                  <span class="category-slider__text">Книги про мир бизнеса</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-2.svg" alt="icon-2">
+                  <h3 class="category-slider__title category-slider__title--mb-3">Самомотиватия</h3>
+                  <span class="category-slider__text">Книги о мотивации</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-3.svg" alt="icon-3">
+                  <h3 class="category-slider__title">Романы Теленовеллы</h3>
+                  <span class="category-slider__text">Книги с крутыми историями</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-4.svg" alt="icon-4">
+                  <h3 class="category-slider__title">Навыки будущего</h3>
+                  <span class="category-slider__text">Книги для самоподготовки</span>
+                </div>
+              </div>
+              <div class="swiper-slide category-slider__item">
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
+                  <h3 class="category-slider__title">Бизнес & Финансы</h3>
+                  <span class="category-slider__text">Книги про мир бизнеса</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-2.svg" alt="icon-2">
+                  <h3 class="category-slider__title category-slider__title--mb-3">Самомотиватия</h3>
+                  <span class="category-slider__text">Книги о мотивации</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-3.svg" alt="icon-3">
+                  <h3 class="category-slider__title">Романы Теленовеллы</h3>
+                  <span class="category-slider__text">Книги с крутыми историями</span>
+                </div>
+                <div class="category-slider__card">
+                  <img class="category-slider__icon" src="img/category/icon-4.svg" alt="icon-4">
+                  <h3 class="category-slider__title">Навыки будущего</h3>
+                  <span class="category-slider__text">Книги для самоподготовки</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.swiper-wrapper -->
+
+          </div>
+          <!-- /.swiper-container -->
+          <div class="slider__button slider__button--prev"></div>
+          <div class="slider__button slider__button--next"></div>
+        </div>
+      </div>
+      <!-- /.products-category -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

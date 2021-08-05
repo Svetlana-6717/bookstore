@@ -12,3 +12,18 @@ window.addEventListener('DOMContentLoaded', function () {
   };
   toggleMenu();
 });
+
+// slider
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  // loop: true,
+  // watchOverflow: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider__button--next',
+    prevEl: '.slider__button--prev',
+    // hiddenClass: 'swiper-button-hidden',
+  },
+
+});
