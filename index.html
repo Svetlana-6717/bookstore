@@ -73,7 +73,7 @@
   </section>
 
   <section class="products">
-    <div class="container">
+    <div class="container products-container">
       <div class="products-wrapper">
         <div class="recommended">
           <h2 class="recommended__title">Рекомендации</h2>
@@ -238,12 +238,9 @@
       <!-- /.products-wrapper -->
 
       <div class="products-category">
-        <div class="slider">
-          <!-- Slider main container -->
+        <div class="slider-category">
           <div class="swiper-container category-slider">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide category-slider__item">
                 <div class="category-slider__card">
                   <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
@@ -266,6 +263,7 @@
                   <span class="category-slider__text">Книги для самоподготовки</span>
                 </div>
               </div>
+              <!-- /.category-slider__item -->
               <div class="swiper-slide category-slider__item">
                 <div class="category-slider__card">
                   <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
@@ -288,6 +286,7 @@
                   <span class="category-slider__text">Книги для самоподготовки</span>
                 </div>
               </div>
+              <!-- /.category-slider__item -->
               <div class="swiper-slide category-slider__item">
                 <div class="category-slider__card">
                   <img class="category-slider__icon" src="img/category/icon-1.svg" alt="icon-1">
@@ -310,18 +309,113 @@
                   <span class="category-slider__text">Книги для самоподготовки</span>
                 </div>
               </div>
+              <!-- /.category-slider__item -->
             </div>
             <!-- /.swiper-wrapper -->
-
           </div>
-          <!-- /.swiper-container -->
-          <div class="slider__button slider__button--prev"></div>
-          <div class="slider__button slider__button--next"></div>
+          <!-- /.category-slider -->
+          <button class="slider-category__button slider-category__button--prev"></button>
+          <button class="slider-category__button slider-category__button--next"></button>
         </div>
+        <!-- /.slider-category -->
       </div>
       <!-- /.products-category -->
     </div>
     <!-- /.container -->
+  </section>
+
+  <section class="unreleased">
+    <div class="container">
+      <h2 class="unreleased__title">Неизданные книги</h2>
+      <div class="slider-unreleased">
+        <div class="swiper-container unreleased-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide unreleased-slider__item">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-1.jpg" alt="Книга Logo Modernism">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-2.jpg"
+                alt="Книга The overdue life of amy byler">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-3.jpg" alt="Книга Making short films">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-4.jpg" alt="Книга On web typography">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-5.jpg" alt="Книга After the end">
+            </div>
+            <!-- /.unreleased-slider__item -->
+            <div class="swiper-slide unreleased-slider__item">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-1.jpg" alt="Книга Logo Modernism">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-2.jpg"
+                alt="Книга The overdue life of amy byler">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-3.jpg" alt="Книга Making short films">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-4.jpg" alt="Книга On web typography">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-5.jpg" alt="Книга After the end">
+            </div>
+            <!-- /.unreleased-slider__item -->
+            <div class="swiper-slide unreleased-slider__item">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-1.jpg" alt="Книга Logo Modernism">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-2.jpg"
+                alt="Книга The overdue life of amy byler">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-3.jpg" alt="Книга Making short films">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-4.jpg" alt="Книга On web typography">
+              <img class="unreleased-slider__image" src="img/unreleased//unbook-5.jpg" alt="Книга After the end">
+            </div>
+            <!-- /.unreleased-slider__item -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.unreleased-slider -->
+        <button class="slider-unreleased__button slider-unreleased__button--prev"></button>
+        <button class="slider-unreleased__button slider-unreleased__button--next"></button>
+      </div>
+      <!-- /.slider-unreleased -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="review">
+    <div class="review-container">
+      <div class="review-info">
+        <h2 class="review__title">История Автора</h2>
+        <p class="review__text">
+          Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем
+          о&nbsp;закулисье их книг.
+        </p>
+      </div>
+      <!-- /.review-info -->
+      <img class="review__image" src="img/review/video-1.jpg" alt="video">
+
+      <div class="review-wrapper">
+        <div class="review-card">
+          <img class="review-card__image" src="img/review/video-2.jpg" alt="video">
+          <div class="review-card__wrapper">
+            <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
+            <h3 class="review-card__title">Emelda Scandroot</h3>
+            <span class="review-card__text">Author of Books Tittle</span>
+          </div>
+          <!-- /.review-card__wrapper -->
+        </div>
+        <!-- /.review-card -->
+        <div class="review-card">
+          <img class="review-card__image" src="img/review/video-3.jpg" alt="video">
+          <div class="review-card__wrapper">
+            <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
+            <h3 class="review-card__title">Mar Rueda</h3>
+            <span class="review-card__text">Author of Books Tittle</span>
+          </div>
+          <!-- /.review-card__wrapper -->
+        </div>
+        <!-- /.review-card -->
+        <div class="review-card">
+          <img class="review-card__image" src="img/review/video-4.jpg" alt="video">
+          <div class="review-card__wrapper">
+            <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
+            <h3 class="review-card__title">Nembo Lukeni</h3>
+            <span class="review-card__text">Author of Books Tittle</span>
+          </div>
+          <!-- /.review-card__wrapper -->
+        </div>
+        <!-- /.review-card -->
+      </div>
+      <!-- /.review-wrapper -->
+    </div>
+    <!-- /.review-container -->
   </section>
 
   <script src="js/swiper-bundle.min.js"></script>

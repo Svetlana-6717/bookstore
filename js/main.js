@@ -14,16 +14,17 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 // slider
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  // loop: true,
-  // watchOverflow: false,
-
-  // Navigation arrows
+const categorySlider = new Swiper('.category-slider', {
   navigation: {
-    nextEl: '.slider__button--next',
-    prevEl: '.slider__button--prev',
-    // hiddenClass: 'swiper-button-hidden',
+    nextEl: '.slider-category__button--next',
+    prevEl: '.slider-category__button--prev',
   },
+});
 
+// slider
+const unreleasedSlider = new Swiper('.unreleased-slider', {
+  navigation: {
+    nextEl: '.slider-unreleased__button--next',
+    prevEl: '.slider-unreleased__button--prev',
+  },
 });
