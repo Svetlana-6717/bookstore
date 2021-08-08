@@ -40,9 +40,6 @@
       margin-top: 0
   .category
     &-slider
-      &__card
-        flex: 0 0 22%
-        padding: 25px 9px
       &__title
         margin-top: 25px
         font-size: 18px
@@ -76,6 +73,7 @@
 @media (max-width: 992px)
   .container, .review-container
     max-width: 760px
+    width: 92%
   .book
     &-info
       width: 360px
@@ -94,6 +92,18 @@
     &-content
       width: 360px
       height: 450px
+  .recommended
+    &-wrapper
+      row-gap: 15px
+      column-gap: 5px
+    &-card
+      width: 350px
+      gap: 15px
+  .category
+    &-slider
+      &__card
+        max-width: 230px
+        padding: 25px 9px
   .review
     padding-top: 60px
     &__title
@@ -192,9 +202,10 @@
           background-color: $blue
           color: $light
   .subscribe
-    &__button
-      &:hover
-        background-color: $blue
+    &-form
+      &__button
+        &:hover
+          background-color: $blue
 
 @media (max-width: 768px)
   .container, .review-container
@@ -311,7 +322,8 @@
     &-slider
       height: 500px
       &__card
-        flex: 0 0 48%
+        height: 240px
+      &__item
         height: 240px
   .slider
     &-category
@@ -331,6 +343,8 @@
       align-items: center
       text-align: center
       margin-bottom: 35px
+    &__image
+      height: 300px
     &-wrapper
       justify-content: space-between
       gap: 0
@@ -410,6 +424,10 @@
         display: none
   .rating
     max-width: 290px
+  .category
+    &-slider
+      &__card
+        max-width: 200px
   .unreleased
     padding-top: 48px
     padding-bottom: 98px
@@ -449,8 +467,8 @@
       width: 280px
     &__image
       height: 210px
-      object-fit: cover
-      margin-bottom: 16px
+      background-image: url(../img/review/video_1.jpg)
+      margin-bottom: 18px
     &-card
       width: 135px
       &__title
@@ -510,14 +528,14 @@
       max-width: 447px
       width: 100%
       height: 112px
-    &__input
-      height: 56px
-      padding-right: 25px
-    &__button
-      top: 56px
-      right: 11px
-      width: 95%
-      height: 42px
+      &__input
+        height: 56px
+        padding-right: 25px
+      &__button
+        top: 56px
+        right: 11px
+        width: 95%
+        height: 42px
   .footer
     padding-top: 49px
     &-top
@@ -615,11 +633,17 @@
     &-slider
       height: 374px
       &__item
-        gap: 10px
-        justify-content: normal
+        height: 182px
+        &:nth-child(3)
+          order: 2
+          margin-top: 10px
+        &:nth-child(4)
+          order: 3
+        &:nth-child(5)
+          order: 1
+          margin-top: 0 !important
       &__card
-        flex: none
-        width: 140px
+        max-width: 140px
         height: 182px
         padding: 20px 13px
       &__icon
@@ -698,8 +722,9 @@
       line-height: 36px
       max-width: 210px
   .subscribe
-    &__button
-      width: 92%
+    &-form
+      &__button
+        width: 92%
   .footer
     &-wrapper
       width: 261px
