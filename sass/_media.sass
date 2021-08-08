@@ -64,6 +64,14 @@
         margin-bottom: 10px
         font-size: 18px
         line-height: 25px
+  .footer
+    &-wrapper
+      max-width: 750px
+      width: 100%
+      gap: 20px
+    &__list
+      max-width: 165px
+      width: 100%
 
 @media (max-width: 992px)
   .container, .review-container
@@ -144,6 +152,18 @@
   .subscribe
     &-form
       margin-top: 0
+  .footer
+    padding-top: 80px
+    &-top
+      flex-direction: column
+      height: 424px
+      gap: 40px
+    &-logo
+      flex-direction: row
+      align-items: center
+      height: 150px
+      width: 100%
+      gap: 35px
 
 @media (min-width: 992px)
   .button
@@ -223,6 +243,7 @@
       background-image: url(../img/menu-button.svg)
       background-color: $light
       border: none
+      outline: none
   .book
     &-wrapper
       flex-direction: column
@@ -359,6 +380,11 @@
     &-title
       font-size: 30px
       line-height: 40px
+  .footer
+    &__description
+      gap: 20px
+    &__list
+      max-width: 115px
 
 @media (max-width: 576px)
   .container, .review-container
@@ -492,6 +518,36 @@
       right: 11px
       width: 95%
       height: 42px
+  .footer
+    padding-top: 49px
+    &-top
+      margin-bottom: 64px
+      height: 605px
+      gap: 47px
+    &-wrapper
+      flex-wrap: wrap
+      max-width: 330px
+      margin: 0 auto
+      gap: 39px 31px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__ul
+      gap: 15px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &-logo
+      width: 263px
+      margin: 0 auto
+      flex-direction: column
+      order: 1
+      gap: 10px
+    &__description
+      align-items: center
+      gap: 14px
+      text-align: center
 
 @media (min-width: 320px) and (max-width: 480px)
   body
@@ -644,3 +700,32 @@
   .subscribe
     &__button
       width: 92%
+  .footer
+    &-wrapper
+      width: 261px
+      margin-left: 2px
+    &__text
+      margin-left: -10px
+    &-bottom
+      display: none
+  .modal
+    &__content
+      max-width: 350px
+      width: 87%
+      padding: 18px 28px
+    &__close
+      right: 11px
+      top: 13px
+    &__title
+      font-size: 14px
+      line-height: 18px
+    &__input
+      height: 40px
+      font-size: 14px
+    &__text
+      font-size: 11px
+      line-height: 14px
+    &__button
+      padding: 12px
+      min-height: 40px
+      font-size: 12px

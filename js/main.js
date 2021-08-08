@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   // menu
@@ -28,3 +28,24 @@ const unreleasedSlider = new Swiper('.unreleased-slider', {
     prevEl: '.slider-unreleased__button--prev',
   },
 });
+
+// modal
+const toogleModal = () => {
+  const modal = document.querySelector('.modal');
+  const modalBtn = document.querySelectorAll('[data-toogle=modal]');
+
+  modalBtn.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      modal.style.display = 'block';
+    });
+  });
+
+  modal.addEventListener('click', (event) => {
+    let target = event.target;
+
+    if (target.classList.contains('modal__close')) {
+      modal.style.display = 'none';
+    }
+  });
+};
+toogleModal();
