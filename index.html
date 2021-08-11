@@ -12,10 +12,12 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <a id="top"></a>
   <header class="header header--mobile-fixed">
     <div class="container">
       <div class="header-wrapper">
@@ -25,16 +27,16 @@
         <div class="header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item header-menu__item--mobile-visible">
-              <button class="button header__button header__button--mobile-visible">Получить</button>
+              <button class="button header__button header__button--mobile-visible" data-toogle="modal">Получить</button>
             </li>
             <li class="header-menu__item">
-              <a href="#">Рекомендации</a>
+              <a href="#recommended">Рекомендации</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Книги</a>
+              <a href="#unreleased">Книги</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Блог</a>
+              <a href="#blog">Блог</a>
             </li>
           </ul>
         </div>
@@ -65,7 +67,7 @@
         </div>
         <!-- /.book-info -->
         <div class="book-content">
-          <img class="book__image" src="img/book.png" alt="Книга The Psychology of Graphic Design Pricing">
+          <img class="book__image" src="img/book.jpg" alt="Книга The Psychology of Graphic Design Pricing">
         </div>
         <!-- /.book-content -->
       </div>
@@ -74,11 +76,11 @@
     <!-- /.container -->
   </section>
 
-  <section class="products">
+  <section class="products" id="recommended">
     <div class="container products-container">
       <div class="products-wrapper">
         <div class="recommended">
-          <h2 class="recommended__title">Рекомендации</h2>
+          <h2 class="title recommended__title">Рекомендации</h2>
           <div class="recommended-wrapper">
             <div class="recommended-card">
               <div class="recommended-card__image">
@@ -299,9 +301,9 @@
     <!-- /.container -->
   </section>
 
-  <section class="unreleased">
+  <section class="unreleased" id="unreleased">
     <div class="container">
-      <h2 class="unreleased__title">Неизданные книги</h2>
+      <h2 class="title unreleased__title">Неизданные книги</h2>
       <div class="slider-unreleased">
         <div class="swiper-container unreleased-slider">
           <div class="swiper-wrapper">
@@ -349,11 +351,16 @@
         </p>
       </div>
       <!-- /.review-info -->
-      <div class="review__image"></div>
-
+      <a data-fancybox class="review__image" href="https://www.youtube.com/watch?v=da8n6AMyuqs">
+        <div class="review__button"></div>
+      </a>
       <div class="review-wrapper">
         <div class="review-card">
-          <img class="review-card__image" src="img/review/video-2.jpg" alt="video">
+          <a class="review-card__image" data-fancybox href="https://www.youtube.com/watch?v=da8n6AMyuqs">
+            <img class="review-card__image-inner" src="img/review/video-2.jpg" alt="video">
+            <div class="review-card__button"></div>
+          </a>
+
           <div class="review-card__wrapper">
             <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
             <h3 class="review-card__title">Emelda Scandroot</h3>
@@ -363,7 +370,10 @@
         </div>
         <!-- /.review-card -->
         <div class="review-card">
-          <img class="review-card__image" src="img/review/video-3.jpg" alt="video">
+          <a class="review-card__image" data-fancybox href="https://www.youtube.com/watch?v=da8n6AMyuqs">
+            <img class="review-card__image-inner" src="img/review/video-3.jpg" alt="video">
+            <div class="review-card__button"></div>
+          </a>
           <div class="review-card__wrapper">
             <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
             <h3 class="review-card__title">Mar Rueda</h3>
@@ -373,7 +383,10 @@
         </div>
         <!-- /.review-card -->
         <div class="review-card">
-          <img class="review-card__image" src="img/review/video-4.jpg" alt="video">
+          <a class="review-card__image" data-fancybox href="https://www.youtube.com/watch?v=da8n6AMyuqs">
+            <img class="review-card__image-inner" src="img/review/video-4.jpg" alt="video">
+            <div class="review-card__button"></div>
+          </a>
           <div class="review-card__wrapper">
             <img class="review-card__icon" src="img/review/icon.svg" alt="icon">
             <h3 class="review-card__title">Nembo Lukeni</h3>
@@ -434,11 +447,11 @@
     <!-- /.container -->
   </section>
 
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container">
       <div class="blog-wrapper">
         <div class="blog-info">
-          <h2 class="blog__title">Ehya Блог</h2>
+          <h2 class="title blog__title">Ehya Блог</h2>
           <div class="blog-info__wrapper">
             <img class="blog-info__image" src="img/blog/blog-1.jpg" alt="blog-image">
             <div class="blog-info__description">
@@ -497,12 +510,12 @@
         <h2 class="newsletter-title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
 
         <div class="subscribe-wrapper">
-          <form class="subscribe-form" action="#">
-            <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш Emaill" required>
+          <form class="subscribe-form">
+            <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш Emaill">
             <img class="subscribe-form__icon" src="img/email.svg" alt="icon: email">
-            <button class="subscribe-form__button">Регистрация</button>
+            <button class="subscribe-form__button" type="submit">Регистрация</button>
           </form>
-          <div class="error"></div>
+          <div class="error error--form"></div>
         </div>
         <!-- /.subscribe-wrapper -->
       </div>
@@ -515,7 +528,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-logo">
-          <a class="logo" href="#">
+          <a class="logo" href="#top">
             <img src="img/logo.svg" alt="Logo: Ehya">
           </a>
           <div class="footer__description">
@@ -632,26 +645,45 @@
   </footer>
 
   <div class="modal">
-    <div class="modal__content">
-      <a href="#">
-        <img class="modal__close" src="img/close.svg" alt="icon: close">
-      </a>
+    <div class="popup modal__content popup--active">
+      <button class="modal__close"></button>
       <h3 class="modal__title">Форма обратной связи</h3>
-      <form class="modal__form" action="#">
-        <input class="modal__input" type="text" placeholder="Ваше имя*" name="name" required>
-        <input class="modal__input" type="tel" placeholder="Ваш номер телефона*" name="phone" required>
-        <input class="modal__input" type="email" placeholder="Ваш Email*" name="email" required>
-        <p class="modal__text">
+      <form class="modal-form" action="thankyou.html">
+        <input class="modal-form__input" type="text" placeholder="Ваше имя*" name="name">
+        <div class="error"></div>
+        <input id="phone" class="modal-form__input" type="tel" placeholder="Ваш номер телефона*" name="phone"
+          minlength="18">
+        <div class="error"></div>
+        <input class="modal-form__input" type="email" placeholder="Ваш Email*" name="email">
+        <div class="error"></div>
+        <p class="modal-form__text">
           * - поля, обязательные для заполнения
         </p>
-        <button class="modal__button" type="submit">Отправить</button>
+        <button class="modal-form__button" type="submit">Отправить</button>
       </form>
     </div>
     <!-- /.modal-content -->
+
+    <div class="popup modal__response">
+      <button class="modal__close"></button>
+      <h3 class="modal__title">Сообщение отправлено!</h3>
+      <p class="modal__text">
+        Наш менеджер перезвонит вам через 5 минут.
+      </p>
+      <button class="modal__button">Ok</button>
+    </div>
   </div>
+
+  <a class="to-top" href="#top">
+    <img class="up" src="img/arrow-top.png" alt="icon: to top">
+  </a>
   <!-- /.modal -->
 
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/maskPhone.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -215,17 +215,18 @@
     padding-top: 94px
   .header
     &-menu
-      display: none
       position: fixed
       left: 0
       right: 0
       bottom: 0
       top: 94px
       margin-right: 0
+      transform: translateX(100%)
       &--visible
-        display: block
         overflow: auto
         background-color: $light
+        transition: 1s
+        transform: translateX(0)
       &__list
         flex-direction: column
         align-items: center
@@ -252,9 +253,13 @@
       width: 24px
       height: 24px
       background-image: url(../img/menu-button.svg)
+      background-repeat: no-repeat
+      background-position: center
       background-color: $light
       border: none
       outline: none
+      &--active
+        background-image: url(../img/menu-close.svg)
   .book
     &-wrapper
       flex-direction: column
@@ -345,6 +350,8 @@
       margin-bottom: 35px
     &__image
       height: 300px
+    &__button
+      background-size: 80% 80%
     &-wrapper
       justify-content: space-between
       gap: 0
@@ -355,6 +362,10 @@
         flex-direction: column
         align-items: center
         text-align: center
+      &__button
+        top: 55%
+        left: 54%
+        background-size: 70% 70%
       &__icon
         order: 1
       &__text
@@ -399,6 +410,8 @@
       gap: 20px
     &__list
       max-width: 115px
+  .to-top
+    display: none
 
 @media (max-width: 576px)
   .container, .review-container
@@ -458,7 +471,7 @@
           margin-right: -58px
   .review
     padding-top: 44px
-    padding-bottom: 43px
+    padding-bottom: 44px
     &__title
       font-size: 28px
       line-height: 36px
@@ -469,6 +482,10 @@
       height: 210px
       background-image: url(../img/review/video_1.jpg)
       margin-bottom: 18px
+    &__button
+      top: 60%
+      left: 57%
+      background-size: 55% 55%
     &-card
       width: 135px
       &__title
@@ -482,7 +499,15 @@
       &__image
         height: 138px
         object-fit: cover
-        margin-bottom: 14px
+        margin-bottom: 17px
+      &__button
+        top: 55%
+        left: 54%
+        background-size: 70% 70%
+      &__image
+        &-inner
+          height: 100%
+          object-fit: cover
   .partners
     &-wrapper
       width: 275px
@@ -675,20 +700,37 @@
   .review
     &-container
       width: 300px
+    &__button
+      top: 60%
+      left: 57%
+      background-size: 55% 55%
     &-card
       width: 140px
       &:last-child
         display: none
+      &__button
+        top: 55%
+        left: 54%
+        background-size: 70% 70%
+      &__image
+        &-inner
+          height: 100%
+          object-fit: cover
   .partners
+    padding-bottom: 59px
     &__title
       margin-bottom: 29px
     &-wrapper
-      width: 231px
+      width: 219px
+      height: 130px
       row-gap: 0
     &__image
-      width: 99px
+      width: 87px
       height: 29px
-      margin-bottom: 22.5px
+      margin-bottom: 23px
+      &:nth-child(1)
+        width: 99px
+
   .blog
     &-info
       &__image
@@ -744,13 +786,17 @@
     &__title
       font-size: 14px
       line-height: 18px
-    &__input
-      height: 40px
-      font-size: 14px
-    &__text
-      font-size: 11px
-      line-height: 14px
-    &__button
-      padding: 12px
-      min-height: 40px
-      font-size: 12px
+    &-form
+      &__input
+        height: 40px
+        font-size: 14px
+      &__text
+        font-size: 11px
+        line-height: 14px
+      &__button
+        min-height: 40px
+        font-size: 12px
+    &__response
+      max-width: 350px
+      width: 87%
+      padding: 18px 28px
