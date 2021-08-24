@@ -2,9 +2,9 @@
   Сайт книжного магазина
 
 ### Технологии
-    * HTML
-    * Sass
-    * JavaScript
+- HTML
+- Sass
+- JavaScript
     
 ### Ссылка для просмотра
    [Link](https://cv-lana.github.io/bookstore)
